@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            Price: <input #priceTem type="number" [value]="price()" (input)="updatePrice(priceTem.value)"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            This is from signal, Total Price for 10 items {{ totalPrice() }}
+        </div>
+    </div>
+</div>

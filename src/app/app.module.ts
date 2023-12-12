@@ -25,6 +25,8 @@ import { StoreCounterComponent } from './store-counter/store-counter.component';
 import { counterReducer } from './store-counter/store/counter.reducer';
 import { EffectsModule } from '@ngrx/effects';
 import { CounterEffects } from './store-counter/store/counter.effects';
+import { StandaloneTestComponent } from './standalone-test/standalone-test.component';
+import { SignalTestComponent } from './signal-test/signal-test.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,13 @@ import { CounterEffects } from './store-counter/store/counter.effects';
     FormsModule,
     ReactiveFormsModule,
     StoreModule.forRoot({counter: counterReducer}, {}),
-    EffectsModule.forRoot([CounterEffects])
+    EffectsModule.forRoot([CounterEffects]),
+    StandaloneTestComponent,
+    SignalTestComponent
+  ],
+  exports: [
+    StandaloneTestComponent,
+    SignalTestComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
