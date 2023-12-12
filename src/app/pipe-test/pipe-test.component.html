@@ -1,0 +1,13 @@
+<div class="container">
+    <!-- <div class="row" *ngFor="let server of servers | sortByName">
+        <div class="col-md-12">
+            {{server.name}} | {{server.instanceType | reverse}} | {{server.startDate| date:'fullDate'}}
+        </div>
+    </div> -->
+    <br>
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let server of servers | sortByName">
+            <p>{{server.name}} | {{server.instanceType | reverse}} | {{server.startDate| date:'fullDate'}}</p>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="column">
+            <button class="btn btn-primary" (click)="toggleDisplay()">Display Details</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <p *ngIf="displayText">Secret Password= tuna</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <p *ngFor="let log of logActivities; let i = index"
+                [ngStyle]="{backgroundColor:getBgColor()}"
+                [ngClass]="{colorTest: getTextColor()}">{{log}}</p>
+        </div>
+    </div>
+</div>

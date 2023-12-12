@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div *ngFor="let user of users; let i =index" >
+                <div *ngIf="user.status==='active'">
+                    <strong>{{user.username}}</strong>
+                    <a href="#" (click)="setInactiveStatus(i)">Set to Inactive</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

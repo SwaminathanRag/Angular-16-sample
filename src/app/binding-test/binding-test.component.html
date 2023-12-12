@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="column">
+            <label>User Name:</label>
+            <input type="text" [(ngModel)]="username"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <label>User Name:</label>{{username}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <button class="btn btn-primary" 
+            [disabled]="username === ''"
+            (click)="resetUserName()">RESET USERNAME</button>
+        </div>
+    </div>
+
+</div>

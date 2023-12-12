@@ -1,0 +1,18 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <app-game-control (counterChange)="onChangeGameCounter($event)"></app-game-control>
+        </div>
+    </div>
+    <div class="row" *ngFor="let oddNumber of oddNumbers">
+        <div class="col-sm-12">
+            <app-game-odd [number]="oddNumber"></app-game-odd>
+        </div>
+    </div>
+    <div class="row" *ngFor="let evenNumber of evenNumbers">
+        <div class="col-sm-12">
+            <app-game-even [number]="evenNumber"></app-game-even>
+        </div>
+    </div>
+</div>

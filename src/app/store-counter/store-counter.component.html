@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            This is counter value: {{ count$ | async }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <button class="btn btn-success" (click)="incrementCounter()">Increment</button>
+        </div>
+        <div class="col-md-6">
+            <button class="btn btn-warning" (click)="decrementCounter()">Decrement</button>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <button class="btn btn-success" (click)="saveCounter()">Save</button>
+        </div>
+        <div class="col-md-6">
+            <button class="btn btn-warning" (click)="reloadCounter()">Load</button>
+        </div>
+    </div>
+</div>
+
+ 
