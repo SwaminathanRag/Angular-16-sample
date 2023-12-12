@@ -7,6 +7,8 @@ It contain code sample for handling forms using Forms Module.
 It contain code sample for handling forms using Reactive Forms Module.
 It contain code sample for using pipes like async, reverse, date, sortByName.
 It contain code sample for using NgRx Store with Reducer, Actions, (side) Effects, Selector. It uses of, switchMap, tap, withLatestFrom operators and Observable from rxjs.
+It contain code sample for using Standalone component.
+It contain code sample for using Signal component.
 It also contains sample for component testing script with Component uses NgRx. Set up MockStore.
 It contains code sample for component testing script using Karma/Jasmine. 
 It contains code sample for End to End (integration) testing script using Cypress.
